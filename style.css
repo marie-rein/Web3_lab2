@@ -1,0 +1,62 @@
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.card {
+  cursor: pointer;
+  width: 20rem;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.card-title {
+  background-color: #393E46;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  font-family: "Lora", serif;
+}
+
+label {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul {
+  width: 100%;
+}
+
+.title {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.envoyer {
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

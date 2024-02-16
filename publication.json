@@ -1,0 +1,136 @@
+{
+  "publication": [
+    {
+      "titre": "Information",
+      "auteur": "John Dubois",
+      "datePublication": "2022-01-01",
+      "contenu": "Voici l'information du jour",
+      "id": "96aa"
+    },
+    {
+      "titre": "Actualite",
+      "auteur": "Tremblay Guy",
+      "datePublication": "2022-01-01",
+      "contenu": "Mr. le president, c'est l'actualite du jour",
+      "id": "96ab"
+    },
+    {
+      "titre": "Presse",
+      "auteur": "Jonathan Dupont",
+      "datePublication": "2022-01-01",
+      "contenu": "Bonjour et bienvenue sur votre presse",
+      "id": "96ac"
+    },
+    {
+      "titre": "Journal",
+      "auteur": "Jean Dupont",
+      "datePublication": "2022-01-01",
+      "contenu": "le journal du jour est base sur les actualite du jour",
+      "id": "96ad"
+    },
+    {
+      "titre": "Football",
+      "auteur": "Tony Yohanne",
+      "datePublication": "2022-01-01",
+      "contenu": "l'equipe du football a remporter la coupe du monde",
+      "id": "96ae"
+    },
+    {
+      "titre": "Sport",
+      "auteur": "Louis Savard",
+      "datePublication": "2022-01-01",
+      "contenu": "le hocky est notre sport favori",
+      "id": "96af"
+    },
+    {
+      "titre": "Cinema",
+      "auteur": "Marie-jose Larouche",
+      "datePublication": "2022-01-01",
+      "contenu": "le film du jour est la lune de miel",
+      "id": "96ag"
+    },
+    {
+      "id": 8947,
+      "titre": "Pub Test",
+      "auteur": "Marie",
+      "contenu": "Voici ma nouvelle publication de vendredi",
+      "datePublication": "2024-02-16"
+    },
+    {
+      "id": 8453,
+      "titre": "Pub Test2",
+      "auteur": "Marie",
+      "contenu": "Voici mon deuxième contenu pour la publication du vendredi ",
+      "datePublication": "2024-02-16"
+    },
+    {
+      "id": 1440,
+      "titre": "Pub Test3",
+      "auteur": "Marie",
+      "contenu": "Voici mon deuxième contenu pour la publication du vendredi ",
+      "datePublication": "2024-02-16"
+    }
+  ],
+  "commentaire": [
+    {
+      "contenu": "C'est le contenu du commentaire pour le cinema",
+      "datePublication": "2022-01-01",
+      "idPublication": "96ag",
+      "id": "1"
+    },
+    {
+      "contenu": "C'est le contenu du commentaire pour le sport",
+      "datePublication": "2022-01-01",
+      "idPublication": "96af",
+      "id": "2"
+    },
+    {
+      "contenu": "C'est le contenu du commentaire pour le journal",
+      "datePublication": "2021-11-01",
+      "idPublication": "96ad",
+      "id": "3"
+    },
+    {
+      "contenu": "C'est le contenu du commentaire pour le football",
+      "datePublication": "2022-04-01",
+      "idPublication": "96ae",
+      "id": "4"
+    },
+    {
+      "contenu": "C'est le contenu du commentaire pour l'information",
+      "datePublication": "2022-01-25",
+      "idPublication": "96aa",
+      "id": "5"
+    },
+    {
+      "contenu": "C'est le contenu du commentaire pour l'actualite",
+      "datePublication": "2024-01-01",
+      "idPublication": "96ab",
+      "id": "6"
+    },
+    {
+      "contenu": "C'est le contenu du commentaire pour la presse",
+      "datePublication": "2023-12-01",
+      "idPublication": "96ac",
+      "id": "7"
+    },
+    {
+      "contenu": "C'est le contenu du commentaire pour la presse2",
+      "datePublication": "2023-12-01",
+      "idPublication": "96ac",
+      "id": "8"
+    },
+    {
+      "contenu": "C'est le contenu du commentaire pour le sport",
+      "datePublication": "2022-01-01",
+      "idPublication": "96af",
+      "id": "9"
+    },
+    {
+      "contenu": "C'est le contenu du commentaire pour le football",
+      "datePublication": "2022-04-01",
+      "idPublication": "96ae",
+      "id": "10"
+    }
+  ]
+}

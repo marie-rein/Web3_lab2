@@ -1,0 +1,63 @@
+
+$fontTile: "Lora", serif
+$taille : 20px
+$weight : bold
+
+p
+     font-family: "Poppins", sans-serif
+     font-style: normal
+     font-size: $taille
+
+.card:hover
+        transform: scale(1.1)
+        transition: 0.3s
+
+.card
+    cursor: pointer
+    width: 20rem
+    margin-bottom: 40px
+    text-decoration: none
+
+.card-title
+    background-color: #393E46
+    color: white
+    padding: 0.5rem
+    border-radius: 0.5rem
+    text-align: left
+    font-family: $fontTile
+
+
+
+    
+
+@mixin navClass
+        font-family: $fontTile
+        font-size: $taille
+        font-weight: $weight
+       
+label
+    @include navClass
+
+.navbar-nav
+    @include navClass
+    color: white  
+    overflow: hidden
+    position: fixed
+    top: 0
+    width: 100%     
+
+ul
+    width: 100%
+.title
+     font-family: $fontTile
+     font-weight: $weight
+     font-size: 40px
+     font-style: normal
+
+.envoyer
+    float: right
+    margin-top: 20px
+    margin-bottom: 50px
+
+
+
