@@ -1,5 +1,5 @@
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open-Sans", sans-serif;
   font-style: normal;
   font-size: 20px;
 }
@@ -23,6 +23,13 @@ p {
   border-radius: 0.5rem;
   text-align: left;
   font-family: "Lora", serif;
+}
+
+#formulaire {
+  background-color: #393E46;
+  color: white;
+  max-width: 50%;
+  height: auto;
 }
 
 label {

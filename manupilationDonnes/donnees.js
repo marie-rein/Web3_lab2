@@ -29,7 +29,7 @@ function remplirListe(listPublication) {
         let id = listPublication[i].id;
         let design = `<div class='col-12 col-lg-4'>
                             <a href='blogPage.html?id=${id}' class='card p-3 border-secondary border-5 rounded-4 hover-zoom mx-auto'>
-                                <img src='photos/blog.jpg' alt='blog image'height="200" width="280"/>
+                                <img src='../photos/blog.jpg' alt='blog image'height="200" width="280"/>
                                 <div class="card-body">
                                     <h5 class='card-title text-white'>${listPublication[i].titre}
                                     </h5>
@@ -116,10 +116,7 @@ pageLinks.forEach((link) => {
 ObtenirDonnees();
 // trimText();
 
-//event onclick sur le card pour rediriger vers la page de blog
-link.addEventListener('click', (e) => {
-    
-})
+
 
 
 

@@ -10,6 +10,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "sass": "sass --watch design/style.sass:design/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

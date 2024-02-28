@@ -8,7 +8,7 @@ function AjouterPublication() {
         let titre = document.getElementById("titre").value;
         let auteur = document.getElementById("auteur").value;
         let contenu = document.getElementById("contenu").value;
-        let id = generateID();
+        let id = generateID().toString();
         let datePublication = new Date().toISOString().slice(0, 10);
 
         fetch("http://localhost:3000/publication", {
@@ -25,7 +25,7 @@ function AjouterPublication() {
             }
         })
             .then(response => {
-                window.location.href = "pageprincipale.html";
+                window.location.href = "../Pages/pageprincipale.html";
             })
             .catch(error => {
                 console.error('Erreur lors de l\'ajout de la publication :', error);

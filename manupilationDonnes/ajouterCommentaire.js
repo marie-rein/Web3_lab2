@@ -32,6 +32,6 @@ function AjouterCommentaire() {
         }
     })
     .catch(error => console.error('Erreur lors de l\'ajout du commentaire :', error));
-}
+}    
 
 
