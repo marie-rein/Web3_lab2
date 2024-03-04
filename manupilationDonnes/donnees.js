@@ -8,6 +8,7 @@ const pageNumbers = document.getElementById('page-numbers');
 const pageLinks = document.querySelectorAll('.page-link'); 
 let totalPages = 0;
 
+//recupere toutes les publications
 function ObtenirDonnees() {
     fetch('http://localhost:3000/publication')
         .then(response => response.json())
@@ -21,7 +22,7 @@ function ObtenirDonnees() {
 }
 
 
-
+//rempli la page avec les données de la bd
 function remplirListe(listPublication) {
 
     const maxLength = 40;
@@ -41,17 +42,19 @@ function remplirListe(listPublication) {
         
                         
         document.getElementById("contenuPublication").innerHTML += design;
-
-        //trimText(listPublication[i].contenu, maxLength);
         trimText(document.querySelectorAll(".card-text")[i], maxLength);
     }
 }
+
+//diminue le contenu du card pour ne pas afficher tous le contenu et remplace le reste par .....
 function trimText(cardBody, maxLength) {
     if (cardBody.textContent.length > maxLength) {
         cardBody.textContent = cardBody.textContent.substring(0, maxLength) + '........';
     }
 }
   
+
+//affiche les cards par page
 function displayPage(page) {
     const cards = document.querySelectorAll('.col-12.col-lg-4');
     const startIndex = (page - 1) * cardsPerPage;
@@ -68,7 +71,7 @@ function displayPage(page) {
 
 
 
-// Function to update pagination buttons and page numbers 
+// update les bouttons de la pagination et les chiffres
 
     function updatePagination() {
         const pageNumbers = document.getElementById('page-numbers');
@@ -79,7 +82,7 @@ function displayPage(page) {
         nextButton.disabled = currentPage === totalPages;
     }
 
-// Event listener for "Previous" button 
+// Event pour le boutton previous
 document.getElementById('prev').addEventListener('click', () => {
     if (currentPage > 1) {
         currentPage--;
@@ -88,7 +91,7 @@ document.getElementById('prev').addEventListener('click', () => {
     }
 });
 
-// Event listener for "Next" button
+// Event pour le boutton next
 document.getElementById('next').addEventListener('click', () => {
     if (currentPage < totalPages) {
         currentPage++;
@@ -97,7 +100,7 @@ document.getElementById('next').addEventListener('click', () => {
     }
 }); 
 
-// Event listener for page number buttons 
+// Event pour les chiffres 
 pageLinks.forEach((link) => { 
     link.addEventListener('click', (e) => { 
         e.preventDefault(); 
@@ -114,7 +117,6 @@ pageLinks.forEach((link) => {
 });
 
 ObtenirDonnees();
-// trimText();
 
 
 

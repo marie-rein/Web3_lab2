@@ -1,3 +1,5 @@
+//Include la page nav et footer 
+
 document.addEventListener("DOMContentLoaded", function() {
    
     const navbarContainer = document.getElementById("navbar-container");

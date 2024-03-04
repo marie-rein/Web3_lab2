@@ -10,6 +10,7 @@ function recupererToutesPublications(id) {
         .catch(err => console.log(err));
 }
 
+//remplir les contenus aux bons endroits
 function remplirBloc(pub) {
     console.log(id);
     console.log(pub.id);
@@ -27,6 +28,8 @@ function remplirBloc(pub) {
     }
 }
 
+
+//genere un string du div commentaire par ce que je l'utilise plusieurs endroits comme afficher et ajouter un nouveau commentaire
 function genererStringComment(contenu) {
     return `
         <div class="d-flex flex-start">
@@ -45,8 +48,10 @@ function genererStringComment(contenu) {
 }
 
 
-recupererToutesPublications(id);
+recupererToutesPublications(id);  // recupere les données de la publication avec l'id
 
+
+//remplis les commentaires d'une publication
 function remplirCommentaires(commentaires) {
     commentaires.forEach(commentaire => {
         if (id !== null && commentaire.idPublication == id) {
@@ -56,6 +61,8 @@ function remplirCommentaires(commentaires) {
     });
 }
 
+
+//recupere tous les commentaires du bd
 function recupererTousCommentaires() {
     fetch('http://localhost:3000/commentaire?idPublication=' + id)
         .then(response => response.json())
@@ -63,9 +70,13 @@ function recupererTousCommentaires() {
         .catch(err => console.log(err));
 }
 
+
+//genere un id
 function generateID() {
     return Math.floor(Math.random() * 9000) + 11;
 }
+
+//ajouter un nouveau commentaire
 function AjouterCommentaire() {
     let userComment = document.getElementById("commentaireUser").value;
     let dateComment = new Date().toISOString().slice(0, 10);
@@ -93,11 +104,28 @@ function AjouterCommentaire() {
 
 //domContentLoaded
 document.addEventListener("DOMContentLoaded", function () {
+
     const envoyerBtn = document.querySelector(".envoyer");
+
     envoyerBtn.addEventListener("click", function () {
-        AjouterCommentaire();
-    })
-})
+        $("#dialog-confirm-text").show();
+        $( "#dialog-confirm" ).dialog({
+            resizable: false,
+            height: "auto",
+            width: 400,
+            modal: true,
+            buttons: {
+                "Ajouter le commentaire": function() {                  
+                    AjouterCommentaire();
+                    $( this ).dialog( "close" );
+                },
+                Cancel: function() {
+                    $( this ).dialog( "close" );
+                }
+            }  
+        });
+    });
+});
 
 
 recupererTousCommentaires();

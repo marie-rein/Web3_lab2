@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link href="../design/custom.css" rel="stylesheet">
 </head>
 <body>
@@ -50,10 +52,14 @@
     <div class="row">
         <h3>Commentaires</h3>
         <textarea rows="5" cols="30" class="mt-4" id="commentaireUser"></textarea>
-       
+
+    </div>
+    <div id="dialog-confirm" title="Ajouter un commentaire">
+        <p id="dialog-confirm-text" style="display:none"><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Voulais-vous vraiment ajouter ce commenataire ?</p>
     </div>
     <button type="button" class="envoyer btn btn-primary btn-lg">Envoyer</button>
 </div>
+
 <div class="container mt-5 mb-5">
     <div class="row" id="lescommentaires" class="mx-auto">
   
@@ -65,6 +71,6 @@
 <script src="../manupilationDonnes/loadNavAndFooter.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
 </body>
 </html>

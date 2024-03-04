@@ -1,8 +1,4 @@
 function AjouterPublication() {
-    // window.titre = "Ajouter une publication";
-    // const confirmation = window.confirm("Voulez-vous vraiment ajouter cette publication ?");
-
-    // if (confirmation) {
 
 
         let titre = document.getElementById("titre").value;
@@ -32,7 +28,7 @@ function AjouterPublication() {
             });
     }
 
-//}
+
 
 function generateID() {
     return Math.floor(Math.random() * 9000) + 1;
